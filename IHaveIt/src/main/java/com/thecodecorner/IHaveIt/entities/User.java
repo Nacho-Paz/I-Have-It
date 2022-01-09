@@ -11,6 +11,8 @@ import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
 import org.hibernate.annotations.GenericGenerator;
 
 /**
@@ -18,7 +20,8 @@ import org.hibernate.annotations.GenericGenerator;
  * @author Usuario
  */
 @Entity
-public class User extends Account {
+@Inheritance(strategy = InheritanceType.JOINED)
+public class User {
 
     @Id
     @GeneratedValue(generator = "uuid")

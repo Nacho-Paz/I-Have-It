@@ -28,8 +28,8 @@ public class User {
     @GenericGenerator(name = "uuid", strategy = "uuid2")
     private String id;
 
-    private String username;
-    private String password;
+    private String usuarioName;
+    private String usuarioPassword;
 
     @Enumerated(EnumType.STRING)
     private Roles rol;
@@ -45,20 +45,20 @@ public class User {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getUsuarioName() {
+        return usuarioName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUsuarioName(String usuarioName) {
+        this.usuarioName = usuarioName;
     }
 
-    public String getPassword() {
-        return password;
+    public String getUsuarioPassword() {
+        return usuarioPassword;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setUsuarioPassword(String usuarioPassword) {
+        this.usuarioPassword = usuarioPassword;
     }
 
     public Roles getRol() {

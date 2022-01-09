@@ -31,6 +31,7 @@ public class Account {
     private String nombre;
     private String apellido;
     private String password;
+    private String username;
     private String mail;
     private String mailRespaldo;
 
@@ -41,6 +42,14 @@ public class Account {
     private RedSocial redSocial;
 
     public Account() {
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getId() {

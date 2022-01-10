@@ -7,10 +7,8 @@ package com.thecodecorner.IHaveIt.entities;
 
 import java.util.List;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
-import org.hibernate.annotations.GenericGenerator;
 
 /**
  *
@@ -20,25 +18,14 @@ import org.hibernate.annotations.GenericGenerator;
 public class RedSocial {
 
     @Id
-    @GeneratedValue(generator = "uuid")
-    @GenericGenerator(name = "uuid", strategy = "uuid2")
-    private String id;
-
     private String nombre;
+
     private String link;
 
-    @OneToMany(mappedBy = "redSocial")
-    private List<Account> accounts;
+//    @OneToMany(mappedBy = "redSocial")
+//    private List<Account> accounts;
 
     public RedSocial() {
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public String getNombre() {

@@ -16,3 +16,18 @@ spring:
 #Que thymeleaf no guarde datos en cache
   thymeleaf:
     cache: false 
+   
+# application.yml
+spring:
+  mail:
+    default-encoding: UTF-8
+    host: smtp.gmail.com
+    username: thecodecorner.tcc@gmail.com
+    password: tcc20042610PaZtcc
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true

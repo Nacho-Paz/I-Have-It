@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/553d7ad898.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/static/img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/custom.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
+    <title>I Have It</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <!--NAV-->
+        <nav>
+            <div class="container">
+
+                <div class="logo">
+                    <a class="logo__link" href="#"><img class="logo__img" src="/static/img/I Have It!.svg" alt=""></a>
+                </div>
+
+                <ul class="menu">
+                    <li class="menu__li"> <a href="#">Cuentas</a> </li>
+                    <li class="menu__li"> <a href="#">Redes Sociales</a> </li>
+                    <li class="menu__li"> <a href="#">Usuarios</a> </li>
+                </ul>
+
+                <!--Botones de sesion-->
+                <div class="sesion">
+                    <a class="sesion__btn" href="#" id="openModalLogin"><i class="fas fa-user sesion__icon"></i>Log
+                        In</a>
+                    <a class="sesion__btn sesion__btn--register" href="#" id="openModalRegister"><i
+                            class="fas fa-sign-in-alt sesion__icon sesion__icon--register"></i>Register</a>
+                </div>
+
+            </div>
+        </nav>
+
+        <!--Overlay de Modal-->
+        <div class="overlay" id="overlay">
+
+            <!--Modal-->
+            <div class="modal" id="modal">
+
+                <!--Modal:Header-->
+                <nav class="modal__header">
+                    <div class="modal__nav">
+                        <a href="#" class="modal__tittle modal__tittle--register" id="tittleRegister"> Register</a>
+                        <a href="#" class="modal__tittle modal__tittle--login" id="tittleLogin"> Log In</a>
+                    </div>
+                    <a href="#" class="modal__close" id="modal__close"><i class="fas fa-times"></i></a>
+                </nav>
+
+                <!--REGISTRO-->
+                <form class="modal__form modal__form--register" action="" method="post" id="modalFormRegister">
+                    <div class="form__inputs">
+                        <input class="inputs__ingreso inputs__ingreso--name" type="text" required placeholder="Usuario">
+                        <i class="fas fa-user-circle inputs__icon"></i>
+                    </div>
+                    <div class="form__inputs">
+                        <input class="inputs__ingreso" type="password" required placeholder="Contraseña">
+                        <i class="fas fa-key inputs__icon"></i>
+                    </div>
+                    <div class="form__inputs">
+                        <input class="inputs__ingreso" type="password" required placeholder="Repetir Contraseña">
+                        <i class="fas fa-key inputs__icon"></i>
+                    </div>
+                    <input class="inputs__submit" type="submit" value="Registrarse">
+                </form>
+
+                <!--LOGIN-->
+                <form class="modal__form modal__form--login" action="" method="post" id="modalFormLogin">
+                    <div class="form__inputs">
+                        <input class="inputs__ingreso inputs__ingreso--name" type="text" required placeholder="Usuario">
+                        <i class="fas fa-user-circle inputs__icon"></i>
+                    </div>
+                    <div class="form__inputs">
+                        <input class="inputs__ingreso" type="password" required placeholder="Contraseña">
+                        <i class="fas fa-key inputs__icon"></i>
+                    </div>
+                    <input class="inputs__submit" type="submit" value="Ingresar">
+                </form>
+            </div>
+
+        </div>
+    </header>
+
+    <!--WRAPPER-->
+</body>
+
+<script src="/static/js/modal.js"></script>
+
+</html>

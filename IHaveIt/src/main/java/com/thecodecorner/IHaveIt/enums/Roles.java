@@ -10,5 +10,5 @@ package com.thecodecorner.IHaveIt.enums;
  * @author Usuario
  */
 public enum Roles {
-    USER, ADMIN;
+    VIEWER, USER, ADMIN;
 }

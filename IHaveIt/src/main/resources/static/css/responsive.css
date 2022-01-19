@@ -1,0 +1,17 @@
+/*ICONOS DE LOS BOTONES DE SESION*/
+@media screen and (max-width: 800px) {
+  .sesion__icon {
+    display: none;
+  }
+}
+
+/*MODAL:HEADER*/
+@media screen and (max-width: 560px) {
+  .modal__nav {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .modal__tittle {
+    font-size: 2rem;
+  }
+}
